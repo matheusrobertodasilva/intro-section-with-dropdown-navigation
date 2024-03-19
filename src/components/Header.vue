@@ -7,7 +7,7 @@
         <img src="/src/assets/images/logo.svg" alt="Logo">
         <button @click="mudarButton" class="z-50 lg:hidden"><img :src="iconeMenu" alt=""></button>
         <nav class="absolute top-0 right-0 pt-20 px-5 w-[65vw] h-screen bg-Almost-White 
-        lg:static lg:opacity-100 lg:pointer-events-auto lg:flex lg:justify-between lg:items-center lg:h-auto lg:p-0 lg:w-full"
+        lg:bg-transparent lg:static lg:opacity-100 lg:pointer-events-auto lg:flex lg:justify-between lg:items-center lg:h-auto lg:p-0 lg:w-full"
         :class="[menuAberto ? 'translate-x-0 duration-500 ease-in-out ':'-translate-x-0 opacity-0 duration-500 ease-in-out pointer-events-none']"
         >
             <ul class="lg:flex items-center">
