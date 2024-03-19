@@ -4,7 +4,7 @@
 
 <template>
     <header class="m-5 flex justify-between items-center lg:justify-between">
-        <img src="/assets/images/logo.svg" alt="Logo">
+        <img src="/src/assets/images/logo.svg" alt="Logo">
         <button @click="mudarButton" class="z-50 lg:hidden"><img :src="iconeMenu" alt=""></button>
         <nav class="absolute top-0 right-0 pt-20 px-5 w-[65vw] h-screen bg-Almost-White 
         lg:static lg:opacity-100 lg:pointer-events-auto lg:flex lg:justify-between lg:items-center lg:h-auto lg:p-0 lg:w-full"
@@ -76,7 +76,7 @@
     export default defineComponent ({
         data(){
             return{
-                iconeMenu: "public/assets/images/icon-menu.svg",
+                iconeMenu: "src/assets/images/icon-menu.svg",
                 menuAberto:false,
                 features: false,
                 company: false
