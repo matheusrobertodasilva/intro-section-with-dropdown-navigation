@@ -14,7 +14,7 @@
                 <li class="my-3 lg:ml-10">
                     <a href="#"class="flex items-center lg:hover:text-Almost-Black " @click="[features = !features]" >Features 
                         <img alt="" class="ml-3"
-                        :src="[features ? 'src/assets/images/icon-arrow-up.svg':'/src/assets/images/icon-arrow-down.svg']"
+                        :src="[features ? '/icon-arrow-up.svg':'/icon-arrow-down.svg']"
                         >
                     </a>
                     <ul class="ml-5 my-5 lg:absolute lg:top-10 lg:left-[-35px] lg:bg-Almost-White lg:px-8 lg:rounded-xl lg:shadow-2xl"
@@ -48,7 +48,7 @@
                 <li class="my-3 lg:ml-10 ">
                     <a href="#"class="flex items-center lg:hover:text-Almost-Black" @click="[company = !company]" >Company 
                         <img alt="" class="ml-3" 
-                        :src="[company ? 'src/assets/images/icon-arrow-up.svg':'/src/assets/images/icon-arrow-down.svg']"
+                        :src="[company ? '/icon-arrow-up.svg':'/icon-arrow-down.svg']"
                         >
                     </a>
                     <ul class="ml-5 my-5 
@@ -76,7 +76,7 @@
     export default defineComponent ({
         data(){
             return{
-                iconeMenu: "src/assets/images/icon-menu.svg",
+                iconeMenu: "/icon-menu.svg",
                 menuAberto:false,
                 features: false,
                 company: false
@@ -84,11 +84,11 @@
         },
         methods:{
             mudarButton(){
-                if(this.iconeMenu == "/assets/images/icon-menu.svg"){
-                    this.iconeMenu = "/assets/images/icon-close-menu.svg"
+                if(this.iconeMenu == "/icon-menu.svg"){
+                    this.iconeMenu = "/icon-close-menu.svg"
                     this.menuAberto = true
                 } else{
-                    this.iconeMenu = "/assets/images/icon-menu.svg"
+                    this.iconeMenu = "/icon-menu.svg"
                     this.menuAberto = false
                 }
             }
